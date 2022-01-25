@@ -42,17 +42,23 @@ a {
   align-items: center;
 }
 
-.flx-dir-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .flx-col {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.flx-dir-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flx-dir-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .flx-dir-row {
   display: flex;
   flex-direction: row;
@@ -110,6 +116,8 @@ header > h3 {
 .card-list-item-img {
   width: 190px;
   height: 190px;
+  font-size: 1rem;
+  font-weight: bold;
   background: var(--bg-color);
   border: var(--border-style);
   box-shadow: var(--card-box-shadow-stlye);
@@ -318,6 +326,7 @@ header > h3 {
 /* Dialog CSS */
 
 .dialog {
+  margin-top: 5rem;
   height: 100vh;
   box-shadow: var(--card-box-shadow-stlye);
 }
@@ -327,7 +336,7 @@ header > h3 {
   background-color: var(--bg-color);
   width: 256px;
   height: 200px;
-  padding: 0.5rem 2rem 3rem 2rem;
+  padding: 0.5rem 2rem 1rem 2rem;
   border: var(--border-style);
   box-shadow: var(--card-box-shadow-stlye);
   border-radius: var(--length-4px);
@@ -357,4 +366,55 @@ header > h3 {
 
 .badge-container {
   height: 100vh;
+}
+.profile-badge-container {
+  margin: var(--length-1rem);
+  background-color: var(--bg-color);
+  width: 256px;
+  height: 200px;
+  padding: 0.5rem 2rem 3rem 2rem;
+  border: var(--border-style);
+  box-shadow: var(--card-box-shadow-stlye);
+  border-radius: var(--length-4px);
+}
+.profile-badge {
+  position: relative;
+}
+.profile {
+  border-radius: 50%;
+  background-color: rgb(235, 233, 233);
+  box-shadow: var(--card-box-shadow-stlye);
+}
+.badge {
+  top: 57px;
+  right: 1px;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.online {
+  background-color: #4caf50;
+}
+.offline {
+  background-color: var(--color-red);
+}
+
+.icon-badge {
+  position: relative;
+}
+
+.badge-number {
+  bottom: 190px;
+  left: 25px;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid #aeacac;
+  font-size: 0.5rem;
+
+  text-align: center;
+  color: black;
 }
