@@ -5,8 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snakebar</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    Hello
+    <header>
+      <h3>
+        <a style="color: rgb(75, 74, 74)" href="index.html">Home</a>
+      </h3>
+    </header>
+    <main class="snakebar">
+      <div class="snake left flx-row-space-around margin-top">
+        <div class="snakebar-item flx">
+          <p>You internet is not working</p>
+        </div>
+        <button class="btn text-error" style="color: green">Retry</button>
+        <button class="btn snake-icn">
+          <i class="fas fa-times-circle" style="font-size: 1rem"></i>
+        </button>
+      </div>
+      <div class="snake right flx-row-space-around margin-top">
+        <div class="snakebar-item flx">
+          <p>You internet is not working</p>
+        </div>
+        <button class="btn text-error" style="color: green">Retry</button>
+        <button class="btn snake-icn">
+          <i class="fas fa-times-circle" style="font-size: 1rem"></i>
+        </button>
+      </div>
+    </main>
   </body>
 </html>

@@ -16,6 +16,7 @@
   --secondary-sub-text-color: #706666;
   --bg-header-color: white;
   --color-red: rgb(231, 52, 52);
+  --color-green: rgb(62, 223, 62);
   --hover-color: rgb(252, 212, 212);
   --font-weight: 500;
 
@@ -54,10 +55,10 @@ a {
   justify-content: center;
 }
 
-.flx-dir-col-center {
+.flx-row {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .flx-dir-row {
   display: flex;
@@ -65,11 +66,11 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.flx-row {
+.flx-row-space-around {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 .flx-wrap {
   display: flex;
   justify-content: space-between;
@@ -95,6 +96,11 @@ header > h3 {
 
 /* card List Item */
 
+/* margin top */
+.margin-top {
+  margin-top: 5rem;
+}
+/* margin top end*/
 .card {
   max-width: 900px;
   padding: 2rem 0;
@@ -417,4 +423,81 @@ header > h3 {
 
   text-align: center;
   color: black;
+}
+/* snakebar component */
+
+.snakebar {
+  height: 100vh;
+}
+.snake {
+  width: 400px;
+  background-color: rgb(221, 221, 221);
+  padding: 1rem;
+  border: var(--border-style);
+  box-shadow: var(--card-box-shadow-stlye);
+  border-radius: var(--length-4px);
+}
+.left {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.right {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.text-error {
+  font-family: "Poppins", monospace;
+  font-size: var(--length-1rem);
+  color: var(--color-green);
+  font-weight: 500;
+}
+.text-error:hover {
+  background-color: rgb(150, 231, 150);
+}
+.snake-icn {
+  padding: 1rem;
+  color: var(--color-red);
+}
+.snake-icn:hover {
+  background-color: rgb(252, 175, 175);
+  border-radius: 50%;
+}
+
+.color-grey {
+  color: grey;
+}
+
+/* header component */
+
+.header-wrapper {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  text-align: center;
+  background: var(--bg-color);
+  padding: 1rem;
+  border-bottom: var(--border-style);
+  box-shadow: var(--box-shadow-style);
+}
+.btn > .home-link {
+  color: grey;
+}
+.home > .btn:hover {
+  color: red;
+  background-color: var(--hover-color);
+}
+
+.btn > .home-link:hover {
+  color: red;
+  background-color: var(--hover-color);
+}
+.home > .btn {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+.nav > .btn {
+  margin-right: 2rem;
+  font-size: 1.5rem;
 }
