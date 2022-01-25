@@ -501,3 +501,49 @@ header > h3 {
   margin-right: 2rem;
   font-size: 1.5rem;
 }
+
+/* tab css */
+
+.tab-container {
+  width: 500px;
+  height: 400px;
+  background-color: var(--bg-color);
+  padding: 1rem;
+  border: var(--border-style);
+  box-shadow: var(--card-box-shadow-stlye);
+  border-radius: var(--length-4px);
+}
+
+.tab-2,
+.tab-3,
+.tab-1 {
+  font-family: "Poppins";
+  color: var(--secondary-sub-text-color);
+  outline: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  margin: var(--length-4px);
+  background: none;
+  cursor: pointer;
+  transition: 5ms ease-in;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-2:hover {
+  background-color: var(--hover-color);
+}
+.tab-3:hover {
+  background-color: var(--hover-color);
+}
+,
+.tab-1:hover {
+  background-color: var(--hover-color);
+}
+.tab-active {
+  display: block;
+  color: red;
+  border-bottom: 2px solid red;
+
+  background-color: var(--hover-color);
+}

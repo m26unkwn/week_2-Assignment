@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h3>
+        <a style="color: rgb(75, 74, 74)" href="index.html">Home</a>
+      </h3>
+    </header>
+    <main class="tab margin-top flx">
+      <div class="tab-container flx">
+        <button class="tab-1">TAB ONE</button>
+        <button class="tab-2">TAB TWO</button>
+        <button class="tab-3">TAB THREE</button>
+      </div>
+    </main>
+    <script type="text/javascript">
+      let tab = document.querySelector(".tab-1");
+      let tab_2 = document.querySelector(".tab-2");
+      let tab_3 = document.querySelector(".tab-3");
+      tab.addEventListener("click", () => {
+        tab.classList.add("tab-active");
+        tab_2.classList.remove("tab-active");
+        tab_3.classList.remove("tab-active");
+      });
+      tab_2.addEventListener("click", () => {
+        tab_2.classList.add("tab-active");
+        tab_3.classList.remove("tab-active");
+        tab.classList.remove("tab-active");
+      });
+      tab_3.addEventListener("click", () => {
+        tab_3.classList.add("tab-active");
+        tab_2.classList.remove("tab-active");
+        tab.classList.remove("tab-active");
+      });
+    </script>
+  </body>
+</html>
