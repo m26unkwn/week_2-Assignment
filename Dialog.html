@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h3>
+        <a style="color: rgb(75, 74, 74)" href="index.html">Home</a>
+      </h3>
+    </header>
+    <main class="dialog flx">
+      <div class="dialog-basic flx-col">
+        <div class="card-title">
+          <h4>Use Location Service?</h4>
+        </div>
+        <div style="margin-bottom: 20px" class="card-text">
+          <p style="font-size: 0.9rem" class="card-text">
+            Let us help apps determine location. This mean sending anonymous
+            location data to us, even no apps are running.
+          </p>
+        </div>
+        <div class="dialog-action">
+          <button class="btn text red">DISAGREE</button>
+          <button class="btn text green">AGREE</button>
+        </div>
+      </div>
+      <div class="dialog-simple flx-col">
+        <div class="card-title">
+          <h4>Dialog Header</h4>
+        </div>
+        <div class="drawer-basic-content">
+          <nav class="content-list flx-dir-col">
+            <a class="content-item" style="color: grey"
+              ><i class="fas fa-user-circle icn" style="font-size: 2rem"></i
+              >Item 1</a
+            >
+            <a class="content-item" style="color: grey"
+              ><i class="fas fa-user-circle icn" style="font-size: 2rem"></i
+              >Item 2</a
+            >
+            <a class="content-item" style="color: grey"
+              ><i class="fas fa-user-circle icn" style="font-size: 2rem"></i
+              >Item 3</a
+            >
+          </nav>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
